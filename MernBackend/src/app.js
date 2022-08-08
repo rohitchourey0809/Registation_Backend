@@ -33,7 +33,7 @@ app.post("/register", async (req, res, next) => {
   try {
     // console.log("sre", req.body);
     // console.log(req.body.firstname + " " + req.body.lastname);
-    res.send(req.body.firstname + " " + req.body.lastname);
+    // res.send(req.body.firstname + " " + req.body.lastname);
 
     //checkPassword
 
@@ -52,9 +52,9 @@ app.post("/register", async (req, res, next) => {
       });
 
       const registered = await registerEmployee.save();
-      res.status(201).render(index);
+      res.status(201).render("index");
 
-      console.log(registered);
+      // console.log(registered);
     } else {
       res.send("Password are not matching");
     }

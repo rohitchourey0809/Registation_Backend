@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
 const employeeSchema = new mongoose.Schema({
-  firstname: { type: "string", required: true },
-  lastname: { type: "string", required: true },
-  username: { type: "string", required: true },
-  gender: { type: "string", required: true },
-  password: { type: "string", required: true },
-  city: { type: "string", required: true },
-  state: { type: "string", required: true },
-  password: { type: "string", required: true },
-  confirmpassword: { type: "string", required: true },
+  firstname: { type: String, required: true },
+  lastname: { type: String, required: true },
+  username: { type: String, required: true },
+  gender: { type: String, required: true },
+  password: { type: String, required: true },
+  city: { type: String, required: true },
+  state: { type: String, required: true },
+
+  confirmpassword: { type: String, required: true },
 });
 
 const Register = new mongoose.model("Register", employeeSchema);
