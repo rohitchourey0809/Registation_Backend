@@ -7,7 +7,6 @@ const employeeSchema = new mongoose.Schema({
   password: { type: String, required: true },
   city: { type: String, required: true },
   state: { type: String, required: true },
-
   confirmpassword: { type: String, required: true },
 });
 
